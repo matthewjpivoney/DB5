@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>JSON object using dot notation:</p>
+
+<p id="Author"></p>
+
+<script>
+var myObj, x;
+myObj = { "firstName": "Matthew","lastName": "Pivoney", "email": "matthewjpivoney@lewisu.edu", "phoneNumber": "(708)856-2708", "city": "Tinley Park", "state": "IL", "zip": "60477",  "favoriteHobby": "Video Games", "pets":{ "pname": "Jerome", "type": "Cat"}};
+a = "First Name: " + myObj.firstName
+b = "Last Name: " +myObj.lastName
+c = "Email: " + myObj.email
+d = "Phone: " + myObj.phoneNumber
+e = "City: " + myObj.city
+f = "State: " + myObj.state
+g = "Zip: " + myObj.zip
+h = "Favorite Hobby: " + myObj.faovriteHobby
+i = "Pet: " + myObj.pets.pname + " the " + myObj.pets.type
+
+
+document.getElementById("Author").innerHTML = a + "<br />" + b + "<br />" + c +"<br />" + d + "<br />" + e + "<br />" + f + "<br />" + g + "<br />" + h + "<br />" + i;
+</script>
+
+</body>
+</html>
